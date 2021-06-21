@@ -1,0 +1,41 @@
+Datasets of sizes: 
+1. actual sizes of background and class present in each image
+2. 10 bins, where each object of each class is put in a bin based on the % of image they take up
+3. 50% background, and 50% spread out amongst the classes present
+
+Loss functions used:
+1. Sal_loss: from the paper
+2. Class_loss: from the paper
+3. Size_loss: loss functions I implemented. There are 2 size loss functions:
+			  Size_loss_1: (t_i^n - size_i^n)^2 
+			  Size_loss_2: penalty loss function. penalize if t_i^n is less than a or greater than b
+			  For the exact loss function equations, please refer to Loss 1 and Loss 2 here: http://sharhadbashar.com/HTML/mastersThesis.html
+
+Tests:
+1.  Sal_loss + Size_loss_1 on dataset 1
+2.  Sal_loss + class_loss + Size_loss_1 on dataset 1
+
+3.  Sal_loss + Size_loss_1 on dataset 2 0.5804
+4.  Sal_loss + Class_loss + Size_loss_1 on dataset 2 This gave the bext result at miou = 0.6010
+
+5.  Sal_loss + Size_loss_1 on dataset 3 miou = 0.4714
+6.  Sal_loss + Class_loss + Size_loss_1 on dataset 3 miou = 0.5023
+
+7.  Sal_loss + Size_loss_2 on dataset 1
+8.  Sal_loss + Class_loss + Size_loss_2 on dataset 1 
+
+9.  Sal_loss + Size_loss_2 on dataset 2 
+10. Sal_loss + Class_loss + Size_loss_2 on dataset 2 0.5855
+
+11. Sal_loss + Size_loss_2 on dataset 3
+12. Sal_loss + Class_loss + Size_loss_2 on dataset 3 0.4826
+
+13. Sal_loss + Class_loss + Size_loss_1 on dataset 3, recomputing size after every 2 epoch miou = 0.5328
+14. Sal_loss + Class_loss + Size_loss_1 on dataset 3, recomputing size after every 1 epoch miou = 0.5582
+15. Sal_loss + Class_loss + Size_loss_1 on dataset 3, recomputing average size after every 1 epoch; new_size = (new_size + old_size) / 2 miou = 0.5456
+
+16. Sal_loss + Class_loss + Size_loss_2 on dataset 3, recomputing size after every 1 epoch, where a and b are dynamic miou = 0.5423
+17. Sal_loss + Class_loss + Size_loss_2, recomputing size after every 1 epoch, where a and b are static at a = 0.15 and b = 1 miou = 0.1187
+
+18. Sal_loss + Size_loss_2, where a and b are static at a = 0.15 and b = 1 miou = 0.0982
+19. Sal_loss + Class_loss + Size_loss_2, where a and b are static at a = 0.15 and b = 1 miou = 0.1955

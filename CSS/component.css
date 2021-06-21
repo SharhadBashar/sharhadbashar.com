@@ -1,0 +1,250 @@
+/* Header */
+.large-header {
+	position: absolute;
+	width: 100%;
+	height:100%;
+	top:0;
+	left:0;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+}
+
+.demo-1 .large-header {
+	background-image: url('../Images/demo-1-bg.jpg');
+}
+/****************************/
+
+/* fade in stuff */
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.my-picture {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.fade-in.main-title{
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.fade-in.scroll{
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+/****************************/
+
+/*scroll button */
+
+.scroll a {
+	position: absolute;
+	top:85% ;
+	left: 50%;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	color: silver;
+
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+}
+.scroll a:hover {
+	opacity: .5;
+}
+
+
+section_main a {
+	padding-top: 60px;
+}
+#section_main a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 46px;
+	height: 46px;
+	margin-left: -23px;
+	border: 1px solid silver;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+#section_main a span::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	width: 16px;
+	height: 16px;
+	margin: -12px 0 0 -8px;
+	border-left: 1px solid silver;
+	border-bottom: 1px solid silver;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+#section_main a span::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	content: '';
+	width: 44px;
+	height: 44px;
+	box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+	border-radius: 100%;
+	opacity: 0;
+	-webkit-animation: sdb03 3s infinite;
+	animation: sdb03 3s infinite;
+	box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb03 {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	60% {
+		box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes sdb03 {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	60% {
+		box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+/****************************/
+
+
+.my-picture {
+
+  width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border: 1px solid black;
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.main-title {
+
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 65%;
+	left: 50.5%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	color: silver;
+}
+
+
+td {
+  border: none;
+  position: relative;
+  padding: 18px;
+}
+
+.links {
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%, -50%);
+}
+
+.link-title {
+	color: #f9f1e9;
+	text-align: center;
+	color: silver;
+	text-decoration:none;
+}
+
+.link-padding {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.column {
+  float: left;
+  width: 14.3%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
