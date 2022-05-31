@@ -1,283 +1,84 @@
 <!DOCTYPE html>
 <html lang = "en" class = "no-js">
-  <head>
+	<head>
 
-    <title> Sharhad Bashar</title>
+		<title> Sharhad Bashar</title>
 
-    <meta charset = "UTF-8" />
-    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-    <meta name = "description" content = "My personal website" />
-    <meta name = "keywords" content = "Sharhad, Sadid, Bashar, Mcgill, Electrical Engineering, Software Engineering, Computer, Canadian, Canada, Research, Quebec, Montreal, Banting, CNRL, Canadian natural resourses, Robotics, University of Western Ontario, Tech, Recruitment, Montrium" /><!-- add more -->
-    <meta name = "description" content = "Sharhad's offical website"/>
-    <meta name = "author" content = "Sharhad Bashar"/>
+		<meta charset = "UTF-8" />
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<meta name = "description" content = "My personal website" />
+		<meta name = "keywords" content = "Sharhad, Sadid, Bashar, Waterloo, Computer Vision, Semantic Segmentation, Artificial Intelligence, Machine Learning, Mcgill, Electrical Engineering, Software Engineering, Computer, Canadian, Canada, Research, Quebec, Montreal, Banting, CNRL, Canadian natural resourses, Robotics, University of Western Ontario, Tech, Recruitment, Montrium" /><!-- add more -->
+		<meta name = "description" content = "Sharhad's offical website"/>
+		<meta name = "author" content = "Sharhad Bashar"/>
 
-    <link rel = "icon" href = "../Images/logo.png" type = "image/png" sizes = "16x16">
+		<link rel = "icon" href = "../Images/logo.png" type = "image/png" sizes = "16x16">
 
-    <link rel = "stylesheet" type = "text/css" href = "../CSS/normalize.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "../CSS/component.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "../CSS/scroll.css"/>
-    <link href = 'http://fonts.googleapis.com/css?family = Raleway:200,400,800' rel = 'stylesheet' type = 'text/css'>
+		<link rel = "stylesheet" type = "text/css" href = "../CSS/normalize.css"/>
+		<link rel = "stylesheet" type = "text/css" href = "../CSS/component.css"/>
+		<link rel = "stylesheet" type = "text/css" href = "../CSS/scroll.css"/>
+		<link href = 'http://fonts.googleapis.com/css?family = Raleway:200,400,800' rel = 'stylesheet' type = 'text/css'>
+		<!--[if IE]>
+		<script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		Uploaded to namecheap. Files accessabe through cPanel
+		<![endif]-->
 
-    <script type="text/javascript" src="../js/mastersThesis.js"></script>
-    <!--[if IE]>
-    <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	</head>
+	<body>
 
-  </head>
-  <body style="padding-left:20px">
-    <div id = "gt">
-        <h1> Ground Truth: </h1>
-        <div class = "row">
-          <div class = "column">
-            <img src = "../Images/thesis/gt/2007_000033.png" alt = "1" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/gt/2007_000042.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/gt/2007_000061.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/gt/2007_000123.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/gt/2007_000129.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/gt/2007_000175.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/gt/2007_000187.png" style = "width:100%">
-          </div>
-        </div>
-    </div>
-    <div id = "pred">
-        <h1>Predictions: </h1>
-        <h2>Loss 1:</h2>
-        <img src = "../Images/thesis/loss/loss1.png" alt = "1" style = "width:20%">
-        <ul>
-            <li>Weight = 20</li>
-            <li>Learning rate = 1e-4</li>
-            <li>mIOU = 0.5804</li>
-        </ul>
+		<div class = "container demo-1">
+			<div class = "content">
+				<div id = "large-header" class = "large-header">
+					<canvas id = "demo-canvas"></canvas>
+					<h1 class = "fade-in main-title">Sharhad's Masters Thesis</h1>
 
-        <div class = "row">
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1/2007_000033.png" alt = "1" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1/2007_000042.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1/2007_000061.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1/2007_000123.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1/2007_000129.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1/2007_000175.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1/2007_000187.png" style = "width:100%">
-          </div>
-        </div>
+				</div>
 
 
-        <h3>Using Loss 1 and dataset with 50% background and 50% class objects:</h3>
-        <ul>
-            <li>Weight = 20</li>
-            <li>Learning rate = 1e-4</li>
-            <li>mIOU = 0.4714</li>
-        </ul>
+				<div class = "fade-in links">
+					<table>
+						<tbody>
+							<tr id="row-1">
+						    <td>
+						      <a class = "link-title" href = "https://uwspace.uwaterloo.ca/handle/10012/18321"><h3>Thesis</h3> </a>
+						    </td>
+						    <td>
+                                <a class = "link-title" href = "../Files/presentationGrad.pptx" download><h3>Presentation</h3></a>
+						    </td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
 
-        <div class = "row">
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1_data2/2007_000033.png" alt = "1" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1_data2/2007_000042.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1_data2/2007_000061.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1_data2/2007_000123.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1_data2/2007_000129.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1_data2/2007_000175.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss1_data2/2007_000187.png" style = "width:100%">
-          </div>
-        </div>
+			</div>
+		</div>
 
-        <h2>Loss 2:</h2>
-        <img src = "../Images/thesis/loss/loss2.png" alt = "1" style = "width:20%">
-        <h3>a and b are dynamic</h3>
-        <ul>
-            <li>Weight = 20</li>
-            <li>Learning rate = 1e-4</li>
-            <li>mIOU = 0.5423</li>
-        </ul>
-
-        <div class = "row">
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_dynamic/2007_000033.png" alt = "1" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_dynamic/2007_000042.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_dynamic/2007_000061.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_dynamic/2007_000123.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_dynamic/2007_000129.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_dynamic/2007_000175.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_dynamic/2007_000187.png" style = "width:100%">
-          </div>
-        </div>
-
-        <h3>a and b are dynamic; size re-evaluated after every epoch</h3>
-        starting size 50% background and 50% class objects
-        size re-evaluated after every epoch
-        Using loss 2 and both losses from the papers 
-        <ul>
-            <li>Weight = 20</li>
-            <li>Learning rate = 1e-4</li>
-            <li>mIOU = 0.5582</li>
-        </ul>
-
-        <div class = "row">
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_reevaluate_1/2007_000033.png" alt = "1" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_reevaluate_1/2007_000042.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_reevaluate_1/2007_000061.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_reevaluate_1/2007_000123.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_reevaluate_1/2007_000129.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_reevaluate_1/2007_000175.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_reevaluate_1/2007_000187.png" style = "width:100%">
-          </div>
-        </div>
-        
-        <h3>a and b are constant; a= 15%, b = 100%</h3>
-        <ul>
-            <li>Weight = 20</li>
-            <li>Learning rate = 1e-4</li>
-            <li>mIOU = 0.1955</li>
-        </ul>
-
-        <div class = "row">
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_a15_b100/2007_000033.png" alt = "1" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_a15_b100/2007_000042.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_a15_b100/2007_000061.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_a15_b100/2007_000123.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_a15_b100/2007_000129.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_a15_b100/2007_000175.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss2_a15_b100/2007_000187.png" style = "width:100%">
-          </div>
-        </div>
+		<a href = "../index.html" style = "text-decoration:none";>
+			<img class = "fade-in my-picture" src = "../Images/me.jpg"/>
+		</a>
 
 
-          <h2>Loss All:</h2>
-          <img src = "../Images/thesis/loss/loss_all.png" alt = "1" style = "width:20%">
-          <ul>
-            <li>Sum of all 3 losses listed above</li>
-            <li>Weight = 20</li>
-            <li>Learning rate = 1e-4</li>
-            <li>mIOU = 0.6010</li>
-          </ul>
 
-        <div class = "row">
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss_all/2007_000033.png" alt = "1" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss_all/2007_000042.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss_all/2007_000061.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss_all/2007_000123.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss_all/2007_000129.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss_all/2007_000175.png" style = "width:100%">
-          </div>
-          <div class = "column">
-            <img src = "../Images/thesis/pred_loss_all/2007_000187.png" style = "width:100%">
-          </div>
-        </div>
-    </div>
-    <table>
-      <tbody>
-        <tr id="row-1">
-          <td>
-            <a class = "link-padding" href = "results.txt"><h3>More Results</h3> </a>
-          </td>
-          <td>
-            <button class = "code" onclick="password()" style = "
-                background: none!important;
-                border: none;
-                padding: 0!important;
-                font-family: arial, sans-serif;
-                color: #069;
-                text-decoration: underline;
-                cursor: pointer;
-                display: block;
-                font-size: 1.17em;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-                font-weight: bold;">
-                Code</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <a id="download" style="display: none" href="../HTML/weak_seg_full_sal_train.py" download>Download</a>
+<!--
+		<section id = "section_main" class = "fade-in scroll">
+			<a href = "#section_quote" ><span></span></a>
+		</section>
+		<section id = "section_quote" class = "quote">
+				<h1 id = "famousQuote"></h1>
+				<img src="" id="famousImage" ></img>
+		</section>
 
-  </body>
+
+-->
+
+		<!--for the animated thing in the background-->
+		<script src = "../js/TweenLite.min.js"></script>
+		<script src = "../js/EasePack.min.js"></script>
+		<script src = "../js/rAF.js"></script>
+		<script src = "../js/demo-1.js"></script>
+		<!--for the scroll-->
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script  src = "../js/scroll.js"></script>
+		<script  src = "../js/index.js"></script>
+	</body>
 </html>
