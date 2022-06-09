@@ -13,7 +13,8 @@
 }
 
 .demo-1 .large-header {
-	background-image: url('../Images/demo-1-bg.jpg');
+	background-image: url('../Images/demo-2-bg.jpg');
+	filter: brightness(50%);
 }
 /****************************/
 
@@ -207,7 +208,7 @@ section_main a {
 	left: 50.5%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
-	color: silver;
+	color: #f9f1e9;
 }
 
 @media (max-width: 800px) {
@@ -252,17 +253,20 @@ section_main a {
 }
 
 td {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 30px;
 }
 
 .emoji {
-  font-size: 100px;
+  font-size: 50px;
   vertical-align: middle;
   line-height: 2;
 }
 
 @media (max-width: 800px) {
-  span.emoji {
+  .emoji {
     font-size: 50px;
   	vertical-align: middle;
   	line-height: 2;
