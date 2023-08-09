@@ -173,8 +173,7 @@ section_main a {
 
 
 .my-picture {
-
-  width: 150px;
+  width: 120px;
 	height: 150px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
@@ -194,7 +193,6 @@ section_main a {
   	left: 50%;
   }
 }
-
 
 .main-title {
 
