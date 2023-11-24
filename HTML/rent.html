@@ -13,23 +13,300 @@
     <meta name = "author" content = "Sharhad Bashar"/>
 
     <link rel = "icon" href = "../Images/logo.png" type = "image/png" sizes = "16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel = "stylesheet" type = "text/css" href = "../CSS/normalize.css"/>
     <link rel = "stylesheet" type = "text/css" href = "../CSS/component.css"/>
     <link rel = "stylesheet" type = "text/css" href = "../CSS/scroll.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "../CSS/rent.css"/>
     <link href = 'http://fonts.googleapis.com/css?family = Raleway:200,400,800' rel = 'stylesheet' type = 'text/css'>
     <!--[if IE]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     https://condoculture.ca/units/104-101GoldenEagleRoad
     https://streeteasy.com/building/chelsea-tower/19b?featured=1
     <![endif]-->
+    
   </head>
   <body>
-    <header class="header_hdr__gJCzW clear-fix ">
-      <div class="header_hdrLogo__hyC2P">
-        <a href="/"><img src="/logo.svg" alt="Condo Culture Logo"></a>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol id="svg_bedrooms" viewBox="0 0 23 20.4">
+         <path d="M19.5 7.6h-16c-.3 0-.5-.2-.5-.5V3.2c0-.9.7-1.6 1.5-1.6h13.9c.8 0 1.5.7 1.5 1.6v3.9c0 .1-.1.3-.1.4 0 .1-.2.1-.3.1zM4 6.6h15V3.2c0-.3-.2-.6-.5-.6h-14c-.3 0-.5.3-.5.6v3.4zm16-3.4z"></path>
+         <path d="M17.2 7.6c-.3 0-.5-.2-.5-.5V5.3c0-.2-.1-.3-.2-.3H6.4c-.1 0-.3.2-.3.3v1.8c0 .3-.2.5-.5.5s-.5-.2-.5-.5V5.3c0-.7.6-1.3 1.3-1.3h10.1c.7 0 1.2.6 1.2 1.3v1.8c0 .3-.2.5-.5.5zM21.2 16.4H1.8C1 16.4.4 15.8.4 15v-4.2C.3 10 1 9.3 1.8 9.3h19.5c.8 0 1.4.6 1.4 1.4V15c0 .8-.7 1.4-1.5 1.4zM1.8 10.3c-.2 0-.4.2-.4.4V15c0 .2.2.4.4.4h19.5c.2 0 .4-.2.4-.4v-4.2c0-.2-.2-.4-.4-.4H1.8z"></path>
+         <path d="M21.9 10.7c-.1 0-.3-.1-.4-.2l-2.5-3c-.2-.2-.1-.5.1-.7.2-.2.5-.1.7.1l2.5 3c.2.2.1.5-.1.7 0 0-.1.1-.3.1zM.9 10.8c-.1 0-.2 0-.3-.1-.2-.2-.3-.5-.1-.7l2.6-3.2c.2-.2.5-.3.7-.1.2.2.3.5.1.7l-2.6 3.2c-.1.2-.2.2-.4.2zM19.6 18.7c-.3 0-.5-.2-.5-.5v-2.3c0-.3.2-.5.5-.5s.5.2.5.5v2.3c0 .3-.2.5-.5.5zM3.4 18.7c-.3 0-.5-.2-.5-.5v-2.3c0-.3.2-.5.5-.5s.5.2.5.5v2.3c0 .3-.2.5-.5.5z"></path>
+      </symbol>
+      <symbol id="svg_bathrooms" viewBox="0 0 23 20.4">
+         <path d="M17.4 18.2H5.6c-2.3 0-4.2-1.9-4.2-4.2v-2.9c0-.3.2-.5.5-.5H21c.3 0 .5.2.5.5V14c0 2.4-1.8 4.2-4.1 4.2zM2.5 11.6V14c0 1.7 1.4 3.2 3.2 3.2h11.7c1.7 0 3.2-1.4 3.2-3.2v-2.4H2.5z"></path>
+         <path d="M5.8 20.1h-.2c-.3-.1-.4-.4-.3-.6l.7-1.9c.1-.3.4-.4.6-.3.3.1.4.4.3.6l-.7 1.9c-.1.2-.2.3-.4.3zM17.2 20.1c-.2 0-.4-.1-.5-.3l-.7-1.9c-.1-.3 0-.5.3-.7.3-.1.5 0 .7.3l.8 1.9c.1.3 0 .5-.3.7h-.3zM21 11.6c-.3 0-.5-.2-.5-.5v-8c0-1-1-1.8-2.2-1.8-1.1 0-2 .6-2.2 1.5-.1.3-.3.4-.6.4-.3-.1-.4-.3-.4-.6.3-1.3 1.6-2.3 3.1-2.3 1.8 0 3.2 1.3 3.2 2.8v8.1c.1.2-.1.4-.4.4z"></path>
+         <path d="M18.3 5.7h-5.1c-.3 0-.5-.2-.5-.5 0-1.7 1.4-3.1 3.1-3.1s3.1 1.4 3.1 3.1c-.1.3-.4.5-.6.5zm-4.6-1h4c-.2-.9-1-1.6-2-1.6s-1.8.7-2 1.6z"></path>
+         <g>
+            <circle cx="15.1" cy="6.6" r=".3"></circle>
+            <circle cx="16.3" cy="6.6" r=".3"></circle>
+            <circle cx="14.6" cy="7.8" r=".3"></circle>
+            <circle cx="15.7" cy="7.8" r=".3"></circle>
+            <circle cx="16.8" cy="7.8" r=".3"></circle>
+            <g>
+               <circle cx="14" cy="9" r=".3"></circle>
+               <circle cx="15.1" cy="9" r=".3"></circle>
+               <circle cx="16.3" cy="9" r=".3"></circle>
+               <circle cx="17.4" cy="9" r=".3"></circle>
+            </g>
+         </g>
+      </symbol>
+      <symbol id="svg_squareFeet" viewBox="0 0 23 20.4">
+         <path d="M5.8 18.7c-.3 0-.5-.2-.5-.5V2c0-.3.2-.5.5-.5.2.1.5.3.5.5v16.2c0 .3-.3.5-.5.5zM17.1 18.8c-.3 0-.5-.2-.5-.5V2.1c0-.3.2-.5.5-.5s.5.2.5.5v16.2c0 .3-.2.5-.5.5z"></path>
+         <path d="M19.6 4.9H3.4c-.3 0-.5-.2-.5-.5 0-.2.2-.4.5-.4h16.2c.2 0 .4.2.4.5 0 .2-.2.4-.4.4zM19.6 16.3H3.4c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h16.2c.3 0 .5.2.5.5s-.2.5-.5.5z"></path>
+      </symbol>
+      <symbol id="svg_parking" viewBox="0 0 23 20.4">
+         <path d="M11.5 18.7c-4.7 0-8.5-3.8-8.5-8.5s3.8-8.5 8.5-8.5S20 5.5 20 10.2s-3.8 8.5-8.5 8.5zm0-16.1C7.3 2.6 4 6 4 10.2s3.4 7.5 7.5 7.5 7.5-3.4 7.5-7.5-3.3-7.6-7.5-7.6z"></path>
+         <path d="M9.6 13.6V6.8h2.7c1.4 0 2.1.9 2.1 2.1 0 1.1-.8 2.1-2.1 2.1h-1.9v2.7h-.8zm4-4.8c0-.8-.6-1.3-1.4-1.3h-1.8v2.6h1.8c.8 0 1.4-.5 1.4-1.3z"></path>
+      </symbol>
+      <symbol id="svg_locker" viewBox="0 0 23 20.4">
+         <path d="M15.805 17.925h-8.61a2.223 2.223 0 0 1-2.221-2.221v-4.898c0-1.225.996-2.221 2.221-2.221h8.61c1.225 0 2.221.996 2.221 2.221v4.898a2.224 2.224 0 0 1-2.221 2.221zm-8.61-8.393c-.703 0-1.274.572-1.274 1.274v4.898c0 .703.572 1.274 1.274 1.274h8.61c.703 0 1.274-.572 1.274-1.274v-4.898c0-.703-.572-1.274-1.274-1.274h-8.61z"></path>
+         <path d="M13.403 16.271H9.92a.474.474 0 0 1-.448-.628l.844-2.438a1.829 1.829 0 0 1-.541-1.304c0-1.007.819-1.827 1.825-1.827 1.005 0 1.822.821 1.822 1.829 0 .495-.209.97-.562 1.313l.98 2.402a.475.475 0 0 1-.437.653zm-2.818-.947h2.114l-.849-2.08a.474.474 0 0 1 .192-.583.88.88 0 0 0-.442-1.64.88.88 0 0 0-.878.88.9.9 0 0 0 .406.748.475.475 0 0 1 .191.553l-.734 2.122zM14.018 9.195a.473.473 0 0 1-.473-.473V5.903c0-.416-.383-.755-.853-.755h-2.383c-.471 0-.853.339-.853.755v2.819a.473.473 0 0 1-.946 0V5.903c0-.938.807-1.702 1.8-1.702h2.383c.992 0 1.8.763 1.8 1.702v2.819a.475.475 0 0 1-.475.473z"></path>
+         <path d="M15.757 9.393a.473.473 0 0 1-.473-.473V4.757c0-.736-.599-1.336-1.336-1.336H9.083c-.736 0-1.336.599-1.336 1.336v4.076a.473.473 0 0 1-.947 0V4.757a2.285 2.285 0 0 1 2.282-2.282h4.865a2.285 2.285 0 0 1 2.282 2.282v4.162a.472.472 0 0 1-.472.474z"></path>
+      </symbol>
+   </svg>
+
+
+    <div class = "header">
+      <h1>Sharhads Condo For Rent</h1>
+    </div>
+
+    <div class="container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+          <img src="../Images/rent1.jpg">
       </div>
-    </header>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 7</div>
+          <img src="../Images/rent2.jpg">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 7</div>
+          <img src="../Images/rent3.jpg">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+          <img src="../Images/rent4.jpg">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+          <img src="../Images/rent5.jpg">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+          <img src="../Images/rent6.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+          <img src="../Images/rent7.jpg">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <button class="button-2" onclick="currentSlide(7)" role="button">Map</button>
+        <button class="button-2" onclick="currentSlide(1)" role="button">Floor Plan</button>
+      </div>
+    </div>
+
+    <div class="nav-bar">
+        <div class="overview nav-bar_item nav-bar_item_active"><button onclick="changeNavActive('overview')">Overview</button>
+        </div>
+        <div class="building nav-bar_item"><button onclick="changeNavActive('building')">Building</button></div>
+        <div class="area nav-bar_item"><button onclick="changeNavActive('area')">Area</button></div>
+    </div>
+
+
+    <div class="units_title">
+      <p class="units_title_cost">$2,000</p>
+      <p class="units_building_name"><a href="/buildings/the-jake-101-golden-eagle-road-waterloo">The Jake</a></p>
+      <h1 class="units_address">104 — <!-- -->101 Golden Eagle Road<!-- -->,&nbsp;<a class="units_addressCity__2rwmE" href="/cities/waterloo">Waterloo</a></h1>
+    </div>
+
+    <div class="units_info">
+      <div class="units_infoItem">
+        <div class="units_infoIcon">
+          <svg viewBox="0 0 100 100">
+            <use href="#svg_bedrooms"></use>
+          </svg>
+        </div>
+        <div class="units_infoStat">1<!-- --> Beds</div>
+      </div>
+
+      <div class="units_infoItem">
+        <div class="units_infoIcon">
+          <svg viewBox="0 0 100 100">
+            <use href="#svg_bathrooms"></use>
+          </svg>
+        </div>
+        <div class="units_infoStat">1<!-- --> Baths</div>
+      </div>
+      
+      <div class="units_infoItem">
+        <div class="units_infoIcon">
+          <svg viewBox="0 0 100 100">
+            <use href="#svg_squareFeet"></use>
+          </svg>
+        </div>
+        <div class="units_infoStat">521<!-- --> sq.ft.</div>
+      </div>
+      
+      <div class="units_infoItem">
+        <div class="units_infoIcon">
+          <svg viewBox="0 0 100 100">
+            <use href="#svg_parking"></use>
+          </svg>
+        </div>
+        <div class="units_infoStat">1<!-- --> Spot</div>
+      </div>
+
+      <div class="units_infoItem">
+        <div class="units_infoIcon">
+          <svg viewBox="0 0 100 100">
+            <use href="#svg_locker"></use>
+          </svg>
+        </div>
+        <div class="units_infoStat">1<!-- --> Locker</div>
+      </div>
+    </div>
+
+    <div class="overview_container">
+      <p class="overview_desc">
+        Welcome to Urban Comfort at The Jake Condos in North Waterloo's Lakeshore Neighbourhood!
+        This exceptional 1 Bedroom Ground Level condo offers the ultimate blend of style, convenience and modern living.
+        Nestled within one of Waterloo's most coveted neighbourhoods, you'll find yourself immersed in an array of amenities, all within arm's reach.
+        Step inside this immaculate unit and discover the 'Jake D' floor plan, thoughtfully designed to maximize efficiency and comfort.
+        Natural light pours in, enhancing the open-concept living space.
+        The spacious kitchen is a chef's dream, complete with sleek cabinetry, stainless steel appliances, and ample countertop space - perfect for meal preparation and entertaining.
+        As for location, you couldn't ask for more. Imagine having your morning pick-me-up at Starbucks or Tim Hortons just moments from your door.
+        Countless dining options await. With easy access to transit, including the LRT and bus stops, you can effortlessly explore the city or commute to work.
+        Stock up on groceries at Sobeys across the street, take a leisurely stroll to the bank, or explore the vibrant St Jacobs Farmers Market just up the street - it's all within your neighbourhood.
+        The Lakeshore Neighbourhood is not just a place; it's a dynamic and growing community. With the continuous development and investments in this area, it's becoming a hotspot for both investors and end users.
+        The potential for long-term growth is promising, making it an attractive option for those seeking a prosperous investment opportunity.
+        And here's the exciting part: The Jake Condos development is entirely sold out, making this a rare opportunity to own a piece of this sought-after community.
+        Whether you're an investor eager to seize growth potential, or a purchaser wanting to embrace the vibrant neighbourhood for yourself, this condo checks all the boxes.
+        With its unbeatable location, efficient design, and access to a world of amenities, The Jake Condos provides the ideal backdrop for everyday living. Don't miss your chance to make this urban oasis your own!
+      </p>
+
+      <hr class="units_keyline" color="#eeebe4">
+
+      <div class="units_meta">
+        <h2 class = "unit_overview">UNIT OVERVIEW</h2>
+        <ul class="units_metaList">
+           <li class="units_metaItem">
+              <div class="units_metaLabel">Status</div>
+              <p class="units_metaStat">Available</p>
+           </li>
+           <li class="units_metaItem">
+              <div class="units_metaLabel">Ownership Type</div>
+              <p class="units_metaStat">Rent</p>
+           </li>
+           <li class="units_metaItem">
+              <div class="units_metaLabel">Balcony Type</div>
+              <p class="units_metaStat">Terrace</p>
+           </li>
+           <li class="units_metaItem">
+              <div class="units_metaLabel">Parking Features</div>
+              <p class="units_metaStat">Surface</p>
+           </li>
+        </ul>
+     </div>
+    </div>
+
+    <div class="building_container" id="building">
+      <div class="units_buildingWrp">
+          <h2 class="units_metaTitle">The Building</h2>
+          <ul class="units_metaList">
+            <li class="units_metaItem">
+                <div class="units_metaLabel">Status</div>
+                <p class="units_metaStat">Under Construction</p>
+            </li>
+            <li class="units_metaItem">
+                <div class="units_metaLabel">Number of Storeys</div>
+                <p class="units_metaStat">
+                  6<!-- --> storeys
+                </p>
+            </li>
+            <li class="units_metaItem">
+                <div class="units_metaLabel">Pet Friendly</div>
+                <p class="units_metaStat">Yes</p>
+            </li>
+            <li class="units_metaItem">
+              <div class="units_metaLabel">Gym</div>
+              <p class="units_metaStat">Yes</p>
+          </li>
+          </ul>
+      </div>
+
+    </div>
+
+    <div class="area_container">
+      <div class="units_buildingBanner">
+         <h3 class="units_buildingBannerTitle">
+            About <!-- -->The Jake
+         </h3>
+         <a class="button_btn button_white" href="https://condoculture.ca/buildings/the-jake-101-golden-eagle-road-waterloo">
+            Learn More <!-- -->&gt;
+         </a>
+      </div>
+
+      <div class="city_container">
+         <div class="city_img" style="background-image: url(&quot;https://images.ctfassets.net/9h1vrxbpwduu/73yc7df0aFklX9qBKpjtDF/2f848c4b77003ff826ab5618c5835958/waterloo-hero.jpg?fm=webp&amp;w=1000&quot;);"></div>
+         <div class="city_content">
+            <h2 class="city_title">Waterloo</h2>
+            <p>Waterloo enjoys a reputation as a hotbed of innovation and was recently voted as one of the World's Top Intelligent Communities by New York's Intelligent Communities Forum.  With two internationally renowned universities, Waterloo has become home to major tech companies seeking to tap into the local...</p>
+            <a class="button_btn button_black" href="https://condoculture.ca/cities/waterloo">Learn more about Waterloo</a>
+          </div>
+         
+      </div>
+    </div>
+
+    <div class="footer_logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.425 85.856">
+         <path d="M44.576 85.856H0V0h44.576v85.856zM2.811 83.045h38.954V2.811H2.811v80.234z"></path>
+         <path d="M15.73 31.023c0-4.262 3.207-7.137 7.365-7.137 3.02 0 4.779 1.634 5.752 3.372l-2.524 1.241c-.579-1.117-1.82-2.007-3.227-2.007-2.524 0-4.345 1.924-4.345 4.531s1.821 4.531 4.345 4.531c1.407 0 2.648-.89 3.227-2.007l2.524 1.221c-.972 1.717-2.731 3.393-5.752 3.393-4.158 0-7.365-2.897-7.365-7.138zM15.73 54.833c0-4.262 3.207-7.137 7.365-7.137 3.02 0 4.779 1.634 5.752 3.372l-2.524 1.241c-.579-1.117-1.82-2.007-3.227-2.007-2.524 0-4.345 1.924-4.345 4.531 0 2.607 1.821 4.531 4.345 4.531 1.407 0 2.648-.89 3.227-2.007l2.524 1.221c-.972 1.717-2.731 3.393-5.752 3.393-4.158 0-7.365-2.897-7.365-7.138z"></path>
+         <g>
+            <path d="M78.54 37.665V25.278h2.655v10.065h5.237v2.321H78.54zM90.067 37.665V25.278h2.637v12.386h-2.637zM100.482 37.665L95.71 25.279h2.99l3.436 9.508 3.435-9.508h2.99l-4.772 12.386h-3.307zM111.562 37.665V25.278h8.765V27.6H114.2v2.6h5.998v2.321H114.2v2.823h6.127v2.321h-8.765zM140.338 37.665l-2.173-8.505-2.154 8.505h-2.804l-3.547-12.386h2.952l2.174 8.951 2.357-8.951h2.062l2.34 8.951 2.173-8.951h2.953l-3.529 12.386h-2.804zM158.25 37.665v-5.218h-5.849v5.218h-2.638V25.278h2.638v4.865h5.849v-4.865h2.655v12.386h-2.655zM165.188 37.665V25.278h8.766V27.6h-6.129v2.6h5.999v2.321h-5.999v2.823h6.129v2.321h-8.766zM184.868 37.665l-2.433-4.401h-1.931v4.401h-2.638V25.278h5.794c2.581 0 4.178 1.69 4.178 3.993 0 2.173-1.393 3.361-2.729 3.677l2.804 4.717h-3.045zm.26-8.413c0-1.021-.799-1.653-1.838-1.653h-2.785v3.343h2.785c1.039 0 1.838-.631 1.838-1.69zM191.659 37.665V25.278h8.766V27.6h-6.129v2.6h5.998v2.321h-5.998v2.823h6.129v2.321h-8.766zM82.105 61.996v-5.069l-4.754-7.316h3.008l3.064 4.958 3.064-4.958h2.99l-4.735 7.316v5.069h-2.637zM91.144 55.812c0-3.732 2.73-6.406 6.481-6.406 3.732 0 6.462 2.674 6.462 6.406s-2.73 6.406-6.462 6.406c-3.751.001-6.481-2.673-6.481-6.406zm10.231 0c0-2.32-1.467-4.066-3.751-4.066-2.303 0-3.77 1.746-3.77 4.066 0 2.303 1.467 4.066 3.77 4.066 2.285.001 3.751-1.763 3.751-4.066zM107.794 57.039V49.61h2.675v7.354c0 1.727 1.003 2.914 2.915 2.914 1.913 0 2.896-1.188 2.896-2.914V49.61h2.693v7.429c0 3.063-1.82 5.18-5.59 5.18s-5.589-2.116-5.589-5.18zM129.791 61.996V49.61h2.655v10.065h5.236v2.32h-7.891zM140.224 55.812c0-3.732 2.729-6.406 6.48-6.406 3.732 0 6.463 2.674 6.463 6.406s-2.73 6.406-6.463 6.406c-3.751.001-6.48-2.673-6.48-6.406zm10.231 0c0-2.32-1.467-4.066-3.751-4.066-2.303 0-3.77 1.746-3.77 4.066 0 2.303 1.467 4.066 3.77 4.066 2.284.001 3.751-1.763 3.751-4.066zM159.976 61.996l-4.772-12.386h2.989l3.436 9.508 3.436-9.508h2.99l-4.773 12.386h-3.306zM171.056 61.996V49.61h8.766v2.321h-6.129v2.6h5.998v2.321h-5.998v2.823h6.129v2.32h-8.766zM183.381 60.697c0-.818.688-1.505 1.505-1.505.816 0 1.504.687 1.504 1.505 0 .816-.688 1.504-1.504 1.504a1.522 1.522 0 0 1-1.505-1.504z"></path>
+         </g>
+      </svg>
+    </div>
+
+
+    <!-- <div id="mybutton">
+      <a class="button_btn button_black" style="font-size:18px"><i class="fa fa-envelope" style="font-size:36px"></i>               Contact Us</a>
+    </div> -->
+
+    <img id = "contactus" src="../Images/contactus.JPG" alt="Avatar">
+
+
+    <div type="button" class="email-bt" onclick="showContact()">
+      <div class="text-call">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>Contact<br>Us</span>
+      </div>
+    </div>
+
+
+    <script src="../js/rent.js"></script>
   </body>
 </html>
   
