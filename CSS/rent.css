@@ -1,63 +1,3 @@
-@font-face {
-    font-family: ProximaNova-Bold;
-    src: url(/fonts/ProximaNova-Bold.woff2) format("woff2"),url(/fonts/ProximaNova-Bold.woff) format("woff")
-}
-
-@font-face {
-    font-family: ProximaNova-Semibold;
-    src: url(/fonts/ProximaNova-Semibold.woff2) format("woff2"),url(/fonts/ProximaNova-Semibold.woff) format("woff")
-}
-
-@font-face {
-    font-family: ProximaNova-Regular;
-    src: url(/fonts/ProximaNova-Regular.woff2) format("woff2"),url(/fonts/ProximaNova-Regular.woff) format("woff")
-}
-
-@font-face {
-    font-family: ProximaNova-Light;
-    src: url(/fonts/ProximaNova-Light.woff2) format("woff2"),url(/fonts/ProximaNova-Light.woff) format("woff")
-}
-
-@font-face {
-    font-family: SangBleuKingdom-Regular;
-    src: url(/fonts/SangBleuKingdom-Regular.woff2) format("woff2"),url(/fonts/SangBleuKingdom-Regular.woff) format("woff")
-}
-
-@font-face {
-    font-family: SangBleuKingdom-Bold;
-    src: url(/fonts/SangBleuKingdom-Medium.woff2) format("woff2"),url(/fonts/SangBleuKingdom-Medium.woff) format("woff")
-}
-
-@font-face {
-    font-family: neuzeit-grotesk-light;
-    src: url(/fonts/neuzeit-grotesk-light.woff2) format("woff2"),url(/fonts/neuzeit-grotesk-light.woff) format("woff")
-}
-
-@font-face {
-    font-family: neuzeit-grotesk;
-    src: url(/fonts/neuzeit-grotesk.woff2) format("woff2"),url(/fonts/neuzeit-grotesk.woff) format("woff")
-}
-
-@font-face {
-    font-family: neuzeit-grotesk-bold;
-    src: url(/fonts/neuzeit-grotesk-bold.woff2) format("woff2"),url(/fonts/neuzeit-grotesk-bold.woff) format("woff")
-}
-
-@font-face {
-    font-family: dunbar-tall-light;
-    src: url(/fonts/dunbar-tall-light.woff2) format("woff2"),url(/fonts/dunbar-tall-light.woff) format("woff")
-}
-
-@font-face {
-    font-family: dunbar-tall;
-    src: url(/fonts/dunbar-tall.woff2) format("woff2"),url(/fonts/dunbar-tall.woff) format("woff")
-}
-
-@font-face {
-    font-family: dunbar-tall-bold;
-    src: url(/fonts/dunbar-tall-bold.woff2) format("woff2"),url(/fonts/dunbar-tall-bold.woff) format("woff")
-}
-
 * {box-sizing:border-box}
 
 html {
@@ -162,6 +102,12 @@ display: none;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+}
+
+video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .next {
@@ -704,6 +650,14 @@ opacity: 0;
     position: fixed;
     bottom: 70px;
     right: 20px;
-    border-radius: 15%;
+    border-radius: 5%;
     display: none;
+    height: 400px;
+    width: 25%;
+    background-color: #4587F8;
   }
+
+#contactusitem {
+    width: 100%;
+    padding: 0px;
+}
