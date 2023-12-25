@@ -16,7 +16,7 @@ button {
 
 p {
     margin: 0 0 40px;
-    font-size: 1.05em;
+    font-size: 1.05emvw;
     letter-spacing: normal;
     line-height: 1.45em;
 }
@@ -36,11 +36,12 @@ li {
     overflow: hidden;
     text-align: left;
     color: white;
-    font-size: 12px;
+    font-size: 12pxvw;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: "Helvetica"
+    font-family: "Helvetica";
+    width: 100%;
 }
 
 
@@ -55,7 +56,7 @@ li {
     color: #333333;
     display: inline;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 14pxvw;
     font-weight: 700;
     list-style: none;
     margin: 0;
@@ -76,7 +77,6 @@ li {
 
 /* Slideshow container */
 .container {
-    vertical-align: middle !important;
     position: relative;
     margin: auto;
     padding: 20px;
@@ -86,19 +86,19 @@ li {
 
 /* Hide the images by default */
 .mySlides {
-display: none;
+    display: none;
+    text-align: center
 }
 
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    position: absolute; 
     width: auto;
     padding: 16px;
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 20pxvw;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
@@ -125,7 +125,7 @@ video.center {
 /* Number text (1/3 etc) */
 .numbertext {
     color: #240808;
-    font-size: 12px;
+    font-size: 12pxvw;
     padding: 8px 12px;
     position: absolute;
 }
@@ -173,6 +173,12 @@ video.center {
     white-space: nowrap
 }
 
+@media screen and (max-width: 1000px) {
+      .nav-bar {
+        width: 80%;
+      }
+   }
+
 .nav-bar_item {
     display: inline-block;
     margin: 0 50px 0 0;
@@ -190,7 +196,7 @@ video.center {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: .9em;
+    font-size: .9emvw;
     color: #363434
 }
 
@@ -225,7 +231,7 @@ video.center {
 
 .units_title_cost{
     font-family: "Helvetica";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5em;
     text-align: center;
     color: #363434;
@@ -249,8 +255,8 @@ video.center {
 
 .units_building_name {
     font-family: "Helvetica";
-    font-weight: 1000 !important;
-    font-size: 1.2em;
+    font-weight: 900 !important;
+    font-size: 1.4em;
     text-transform: uppercase;
     margin: 0
 }
@@ -270,8 +276,8 @@ video.center {
     vertical-align: middle !important;
     position: relative;
     margin: auto;
-    max-width: 1000px;
     display: flex;
+    max-width: 1000px;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
@@ -279,6 +285,12 @@ video.center {
     border-top: 1px solid #eeebe4;
     border-bottom: 1px solid #eeebe4
 }
+
+@media screen and (max-width: 1000px) {
+      .units_info {
+        max-width: 98%;
+      }
+   }
 
 .units_infoItem {
     width: 20%;
@@ -294,11 +306,23 @@ video.center {
     margin: 0 0 5px
 }
 
+/*@media screen and (max-width: 1000px) {
+      .nav-bar {
+        width: 100%;
+      }
+   }*/
+
 .units_infoStat {
     font-family: "Helvetica";
     font-weight: 1000 !important;
     font-size: .8em
 }
+
+@media screen and (max-width: 1000px) {
+      .units_infoStat {
+        font-size: 2vw
+      }
+   }
 
 .overview_container {
     vertical-align: middle;
@@ -314,7 +338,7 @@ video.center {
     font-family: "Helvetica";
     color: #333333;
     font-weight: 1000 !important;
-    font-size: 1.2em;
+    font-size: 1.2emvw;
     text-transform: uppercase;
     margin: 0;
     padding: 5px 0 15px 0;
@@ -347,7 +371,7 @@ video.center {
     font-family: "Helvetica";
     font-weight: 800;
     color: #333333;
-    font-size: 1.2em;
+    font-size: 1.2emvw;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
@@ -379,11 +403,22 @@ video.center {
     margin-bottom: 5px
 }
 
+@media screen and (max-width: 1000px) {
+      .units_metaLabel {
+        font-size: 2.5vw
+      }
+   }
+
 .units_metaStat {
     margin: 0;
     font-size: 1.05em
 }
 
+@media screen and (max-width: 1000px) {
+      .units_metaStat {
+        font-size: 2.5vw
+      }
+   }
 
 
 .building_container {
@@ -432,10 +467,17 @@ video.center {
     text-transform: uppercase;
     display: inline-block;
     vertical-align: middle;
+    text-align: center!important;
     font-size: 1.8em;
     margin: 0 50px 0 0;
     letter-spacing: 3px
 }
+
+@media screen and (max-width: 1000px) {
+      .units_buildingBannerTitle {
+        font-size: 2.5vw
+      }
+   }
 
 .button_btn{
     font-family: "Helvetica";
@@ -456,6 +498,12 @@ video.center {
     transform: translateY(0);
     transition: all .25s;
 }
+
+@media screen and (max-width: 1000px) {
+      .button_btn {
+        font-size: 2.5vw
+      }
+   }
 
 .button_white {
     background: #fff;
@@ -488,7 +536,7 @@ video.center {
     font-family: "Helvetica";
     color: #333333;
     font-weight: 1000 !important;
-    font-size: 1.5em;
+    font-size: 1.5emvw;
     text-transform: uppercase;
     padding-bottom: 30px;
 }
@@ -524,8 +572,8 @@ video.center {
     text-align:center;
     width:68px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 5%;
+    right: 5%;
     z-index:999;
     transition:.3s;
     -webkit-animation:email-an linear 1s infinite;
@@ -541,26 +589,26 @@ video.center {
 }
 
 .email-bt .text-call span {
-text-align: center;
-color:#F95C18;
-opacity: 0;
-font-size: 0;
-    position:absolute;
-    right: 4px;
-    top: 22px;
-line-height: 14px;
-    font-weight: 600;
-text-transform: uppercase;
-transition: opacity .3s linear;
-font-family: 'montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#F95C18;
+    opacity: 0;
+    font-size: 0;
+        position:absolute;
+        right: 4px;
+        top: 22px;
+    line-height: 14px;
+        font-weight: 600;
+    text-transform: uppercase;
+    transition: opacity .3s linear;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
 }
 
 .email-bt .text-call:hover span {
-opacity: 1;
+    opacity: 1;
     font-size: 11px;
 }
 .email-bt:hover i {
-display:none;
+    display:none;
 }
 
 .email-bt:hover {
@@ -570,7 +618,7 @@ display:none;
 }
 .email-bt:hover i {
     color:#38a3fd;
-    font-size:40px;
+    font-size:40pxvw;
     transition:.3s;
 }
 .email-bt i {
@@ -648,14 +696,22 @@ opacity: 0;
 
 #contactus {
     position: fixed;
-    bottom: 70px;
+    bottom: 120px;
     right: 20px;
-    border-radius: 5%;
+    border-radius: 10%;
     display: none;
-    height: 400px;
-    width: 25%;
+    height: 50%;
+    width: 30%;
+    max-width:100%;
+    height:auto;
     background-color: #4587F8;
   }
+
+@media screen and (max-width: 1000px) {
+      #contactus {
+        width: 60%;
+      }
+   }
 
 #contactusitem {
     width: 100%;
