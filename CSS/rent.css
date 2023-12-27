@@ -94,6 +94,7 @@ li {
 .prev, .next {
     cursor: pointer;
     position: absolute; 
+    top:50%;
     width: auto;
     padding: 16px;
     color: black;
