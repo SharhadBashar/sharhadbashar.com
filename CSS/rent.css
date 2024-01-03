@@ -273,6 +273,17 @@ video.center {
     align-items: center
 }
 
+.units_address_2 {
+    padding-top: 5px;
+    font-family: "Helvetica";
+    font-weight: 300;
+    font-size: 1.4em;
+    margin: 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .units_info {
     vertical-align: middle !important;
     position: relative;
