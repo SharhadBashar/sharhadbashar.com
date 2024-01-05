@@ -729,3 +729,16 @@ opacity: 0;
     width: 100%;
     padding: 0px;
 }
+
+.counter {
+    text-align: center;
+    bottom: 100%;
+    right: 50%;
+}
+
+@media screen and (max-width: 600px) {
+      .counter {
+        visibility: hidden;
+        display: none;
+      }
+   }
